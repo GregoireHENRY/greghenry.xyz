@@ -29,7 +29,7 @@ a{
 
 .grid.body{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: 1fr;
     height: 69vh;
 }
@@ -64,7 +64,7 @@ a{
     align-self: start;
 }
 
-.annonce{
+.announce{
     grid-column: 2;
     grid-row: 2;
     position: relative;
@@ -85,6 +85,7 @@ a{
     grid-row: 1;
 }
 
+
 .text{
     font-size: 18px;
     text-align: left;
@@ -92,15 +93,25 @@ a{
 }
 
 .text.title{
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .text.heading{
-    font-size: 26px;
+    font-size: 30px;
     text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    margin: 10px 150px 30px;
 }
+
+/*.grid.body .text.main {} */
 
 .text.small-info{
     font-size: 14px;
     text-align: right;
 }
+
+.text > img {
+    height: 60px;
+}
+

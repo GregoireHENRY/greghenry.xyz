@@ -7,7 +7,7 @@
     <title>Greg Website</title>
     <link rel="icon" href="rsc/img/galaxy.svg" type="image/x-icon">
     <link rel="stylesheet" href="src/style.css"/>
-    <script src="src/script.js" defer></script>
+    <script src="lib/jquery.min.js"></script>
     <meta property='og:title' content='Greg Website'>
     <meta property='og:image' content='rsc/imgs/me.png'>
     <meta property='og:description' content='Greg Website'>
@@ -27,10 +27,10 @@
 		<a href="mailto:contact@greghenry.xyz">contact@greghenry.xyz</a>
 	    </div>
 	</div>
-	<div class="annonce">
-	    <div class="text">
+	<div class="announce">
+	    <div class="text main">
 		Currently based in Paris, France.<br>
-		Working at the <a href="lesia.obspm.fr">LESIA</a> laboratory at the <a href="observatoiredeparis.psl.eu">Observatoire de Paris</a> in <a href="observatoiredeparis.psl.eu/acces-au-site-de-meudon-de-l.html">Meudon</a> city as an Instrument Design Engineer for the BIRDY interplanetary cubesat concept mission. My day job consists in designing a test bench to validate the science concept of the BIRDY mission. I also help on orbit reconstructions for the mission. If you want to contact me for work, please consider <a href="mailto:gregoire.henry@obspm.fr">gregoire.henry@obspm.fr</a>.<br>
+		Working at the <a href="https://lesia.obspm.fr" class="extern">LESIA</a> laboratory at the <a href="https://observatoiredeparis.psl.eu" class="extern">Observatoire de Paris</a> in <a href="https://observatoiredeparis.psl.eu/acces-au-site-de-meudon-de-l.html" class="extern">Meudon</a> city as an Instrument Design Engineer for the BIRDY interplanetary cubesat concept mission. My day job consists in designing a test bench to validate the science concept of the BIRDY mission. I also help on orbit reconstructions for the mission. If you want to contact me for work, please consider <a href="mailto:gregoire.henry@obspm.fr">gregoire.henry@obspm.fr</a>.<br>
 		In January 2021 I am supposed move to Brussels, Belgium, to start a Ph. D at the Royal Observatory of Belgium, founded by ESA.
 	    </div>
 	    <div class="text small-info">
@@ -41,10 +41,38 @@
     <div class="grid body">
 	<div class="experiences">
 	    <div class="text heading">
-		Experiences
+		<a href="rsc/doc/CV.pdf">Curriculum</a>
 	    </div>
-	    <div class="text">
-		contenu
+	    <div class="text main">
+		Observatory of Paris Meudon / LESIA / CCERES<br>
+		(Feb 2020, 6 months) Meudon, France<br>
+		Asteroid characterisation and radio-science test bench.<br>
+		<img src="rsc/img/birdy.png">
+		<img src="rsc/img/cceres.png">
+		<img src="rsc/img/lesia.png">
+		<img src="rsc/img/esep.png">
+		<br><br>
+		Royal Observatory of Belgium<br>
+		(Jun 2019, 4 months) Uccle, Belgium<br>
+		Simulations of thermal camera images from a spacecraft around asteroid (NASA/NAIF SPICE, shape models, thermal model, camera) for the HERA mission.<br>
+		<img src="rsc/img/hera.png">
+		<img src="rsc/img/rob.png">
+		<img src="rsc/img/esa.png">
+		<br><br>
+		Thales Alenia Space<br>
+		(Jul 2017, 2 months) Toulouse, France<br>
+		Automation &amp; optimization of codes to analyze suppliers' production.<br>
+		<img src="rsc/img/tas.png">
+		<br><br>
+		Institut Polytechnique des Sciences Avancées<br>
+		(2015 - 2020) Toulouse &amp; Paris, France<br>
+		Major: system, minor: space<br>
+		<img src="rsc/img/ipsa.png">
+		<br><br>
+		Koreatech<br>
+		(Aug 2018, 6 months) Cheonan, South Korea<br>
+		Abroad semester studying mechatronics in university.<br>
+		<img src="rsc/img/koreatech.png">
 	    </div>
 	</div>
 	<div class="projects">
@@ -64,6 +92,7 @@
 	    </div>
 	</div>
     </div>
+<script src="src/script.js"></script>
 </body>
 
 </html>
