@@ -1,6 +1,15 @@
 @font-face {
     font-family: "Avenir Next";
-    src: url("../rsc/font/avenir-next.woff2") format("woff2");
+    src: url("../rsc/font/avenir-next-400.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Avenir Next";
+    src: url("../rsc/font/avenir-next-700.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
 }
 
 html, body {
@@ -16,7 +25,7 @@ body{
 }
 
 a{
-    color: rgb(180, 180, 180);
+    color: rgb(190, 190, 190);
     text-decoration: none;
 }
 
@@ -43,7 +52,7 @@ a{
     border-style: solid;
     border-color: rgb(50, 50, 50);
     background: rgb(30, 30, 30);
-    color: rgb(180, 180, 180);
+    color: rgb(190, 190, 190);
     padding: 1px;
     overflow: auto;
     display: flex;
@@ -89,7 +98,7 @@ a{
 
 
 .text{
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     margin: 5px;
 }
@@ -98,8 +107,9 @@ a{
     font-size: 28px;
 }
 
-.text.heading{
-    font-size: 28px;
+.text.heading, .text.heading > * {
+    font-weight: 700;
+    font-size: 18px;
     text-align: center;
     padding: 10px 0px 10px;
     margin: 0px 150px 10px;
@@ -110,7 +120,7 @@ a{
 }
 
 .text.small-info{
-    font-size: 14px;
+    font-size: 12px;
     text-align: right;
 }
 
